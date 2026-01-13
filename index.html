@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>fynxl</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h1 {
+      color: #ffffff;
+      font-size: 3rem;
+      font-weight: 600;
+    }
+
+    .wave {
+      display: inline-block;
+      transform-origin: 70% 70%;
+      animation: wave-animation 2s infinite;
+    }
+
+    @keyframes wave-animation {
+      0%   { transform: rotate(0deg); }
+      10%  { transform: rotate(14deg); }
+      20%  { transform: rotate(-8deg); }
+      30%  { transform: rotate(14deg); }
+      40%  { transform: rotate(-4deg); }
+      50%  { transform: rotate(10deg); }
+      60%  { transform: rotate(0deg); }
+      100% { transform: rotate(0deg); }
+    }
+  </style>
+</head>
+<body>
+  <h1>
+    Welcome to fynxl <span class="wave">👋</span>
+  </h1>
+</body>
+</html>
